@@ -70,7 +70,7 @@ export default function Help() {
           <h1 className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-3xl font-bold text-transparent">
             <TextGenerateEffect words="Help & Support" />
           </h1>
-          <p className="mt-2 text-muted-foreground">Find answers to your questions and get support</p>
+         
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">
@@ -205,7 +205,7 @@ export default function Help() {
         <Card>
           <CardHeader>
             <CardTitle>Frequently Asked Questions</CardTitle>
-            <CardDescription>Find answers to common questions</CardDescription>
+            <CardDescription>Find answers to your questions and get support</CardDescription>
           </CardHeader>
           <CardContent>
             <Accordion type="single" collapsible className="w-full">

@@ -214,45 +214,45 @@ export default function Settings() {
         </div>
       ),
     },
-    {
-      title: "Security",
-      value: "security",
-      content: (
-        <div className="space-y-6">
-          <div className="space-y-4">
-            <h3 className="text-lg font-medium">Security Settings</h3>
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <div>
-                  <Label htmlFor="2fa">Two-factor authentication</Label>
-                  <p className="text-sm text-muted-foreground">Add an extra layer of security to your account</p>
-                </div>
-                <Switch id="2fa" />
-              </div>
-              <div className="flex items-center justify-between">
-                <div>
-                  <Label htmlFor="activity-log">Activity log</Label>
-                  <p className="text-sm text-muted-foreground">View and manage your account activity</p>
-                </div>
-                <Button variant="outline" size="sm">
-                  View
-                </Button>
-              </div>
-              <div className="flex items-center justify-between">
-                <div>
-                  <Label htmlFor="trusted-devices">Trusted devices</Label>
-                  <p className="text-sm text-muted-foreground">Manage devices that have access to your account</p>
-                </div>
-                <Button variant="outline" size="sm">
-                  Manage
-                </Button>
-              </div>
-            </div>
-          </div>
-          <Button>Save Settings</Button>
-        </div>
-      ),
-    },
+    // {
+    //   title: "Security",
+    //   value: "security",
+    //   content: (
+    //     <div className="space-y-6">
+    //       <div className="space-y-4">
+    //         <h3 className="text-lg font-medium">Security Settings</h3>
+    //         <div className="space-y-4">
+    //           <div className="flex items-center justify-between">
+    //             <div>
+    //               <Label htmlFor="2fa">Two-factor authentication</Label>
+    //               <p className="text-sm text-muted-foreground">Add an extra layer of security to your account</p>
+    //             </div>
+    //             <Switch id="2fa" />
+    //           </div>
+    //           <div className="flex items-center justify-between">
+    //             <div>
+    //               <Label htmlFor="activity-log">Activity log</Label>
+    //               <p className="text-sm text-muted-foreground">View and manage your account activity</p>
+    //             </div>
+    //             <Button variant="outline" size="sm">
+    //               View
+    //             </Button>
+    //           </div>
+    //           <div className="flex items-center justify-between">
+    //             <div>
+    //               <Label htmlFor="trusted-devices">Trusted devices</Label>
+    //               <p className="text-sm text-muted-foreground">Manage devices that have access to your account</p>
+    //             </div>
+    //             <Button variant="outline" size="sm">
+    //               Manage
+    //             </Button>
+    //           </div>
+    //         </div>
+    //       </div>
+    //       <Button>Save Settings</Button>
+    //     </div>
+    //   ),
+    // },
   ]
 
   return (
@@ -262,7 +262,7 @@ export default function Settings() {
           <h1 className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-3xl font-bold text-transparent">
             <TextGenerateEffect words="Settings" />
           </h1>
-          <p className="mt-2 text-muted-foreground">Manage your account settings and preferences</p>
+          {/* <p className="mt-2 text-muted-foreground">Manage your account settings and preferences</p> */}
         </div>
 
         <Card>
