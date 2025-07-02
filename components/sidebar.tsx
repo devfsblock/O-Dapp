@@ -121,14 +121,9 @@ export function Sidebar() {
   return (
     <div className="h-screen">
       <motion.div
-        animate={{
-          width: expanded ? "16rem" : "4rem",
-          transition: {
-            duration: 0.2,
-            type: "spring",
-            damping: 10,
-          },
-        }}
+        initial={{ width: expanded ? "16rem" : "4rem" }}
+        animate={{ width: expanded ? "16rem" : "4rem" }}
+        transition={{ duration: 0.2, type: "spring", damping: 10 }}
         className={cn(
           "relative h-full bg-white dark:bg-gray-950 border-r border-border p-3 flex flex-col",
           expanded ? "px-4" : "px-2",
@@ -196,7 +191,12 @@ export function Sidebar() {
                       exit={{ opacity: 0 }}
                       className="flex-1 flex items-center justify-between"
                     >
-                      <span>{item.title}</span>
+                      <span
+                        className="block whitespace-nowrap overflow-hidden text-ellipsis max-w-[10.5rem]"
+                        style={{ minWidth: 0 }}
+                      >
+                        {item.title}
+                      </span>
                     </motion.div>
                   )}
                 </Link>

@@ -1,0 +1,17 @@
+[
+    {
+        "speaker": "user",
+        "text": "Hello, how can I reset my password?",
+        "timestamp": "2025-07-01T12:30:00Z"
+    },
+    {
+        "speaker": "bot",
+        "text": "You can reset your password using the 'Forgot Password' option.",
+        "timestamp": "2025-07-01T12:30:05Z"
+    },
+    {
+        "speaker": "user",
+        "text": "Thanks!",
+        "timestamp": "2025-07-01T12:30:10Z"
+    }
+]
