@@ -50,7 +50,7 @@ function UsernameDisplay({ id }: { id: string }) {
 export default function ValidateNowPage() {
   const { user } = useUserProfile();
   const { projects, isLoading, isError, updateProject, mutate } = useProjects();
-  const [expandedProject, setExpandedProject] = useState<number | null>(null)
+ const [expandedProject, setExpandedProject] = useState<number | null>(null)
   const [validatingLoading, setValidatingLoading] = useState<Record<number, boolean>>({});
   const [validatingError, setValidatingError] = useState<Record<number, string | null>>({});
   const [downloadingFiles, setDownloadingFiles] = useState<Record<string, boolean>>({});

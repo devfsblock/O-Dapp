@@ -353,44 +353,20 @@ export default function Academy() {
           <InfoCard icon={<FileText className="h-4 w-4 text-primary" />} title="Phase 2: Labeling Process">
             <div className="space-y-4">
               <p className="text-sm text-muted-foreground">
-                Labelers browse available tasks and manually annotate the uploaded data.
+                Labelers can perform data labeling directly in the <b>Labeling Workspace</b> (see the "Label Now" page in the sidebar). This section provides a list of available projects for labeling, progress tracking, and file download/upload features. All labeling is performed securely within the OanicAI platform.
               </p>
-
               <div className="space-y-3">
-                <StepItem title="Find Available Work">
-                  <ul className="list-disc pl-5 space-y-1">
-                    <li>Browse tasks in the "Find Work" section of "Label Now" page</li>
-                    <li>Filter by task type, difficulty, and reward amount</li>
-                    <li>Review project requirements and guidelines</li>
-                  </ul>
+                <StepItem title="Access Labeling Workspace">
+                  Go to the <b>Labeling Workspace</b> from the sidebar. Here, you can browse and apply for available labeling projects.
                 </StepItem>
-
-                <StepItem title="Start Labeling">
-                  <ul className="list-disc pl-5 space-y-1">
-                    <li>Click "Start Labeling" to claim the task</li>
-                    <li>Download files locally for annotation</li>
-                    <li>Use provided tools or external software as specified</li>
-                  </ul>
+             
+                <StepItem title="Label the Data">
+                  Download project files, label them using your preferred offline tools (such as Excel, VS Code, or open-source annotation tools like <a href='https://label-studio.io/' target='_blank' rel='noopener noreferrer' className='underline text-blue-600'>Label Studio</a> or <a href='https://doccano.github.io/doccano/' target='_blank' rel='noopener noreferrer' className='underline text-blue-600'>Doccano</a>), and re-upload the labeled files to the platform. 
                 </StepItem>
-
-                <StepItem title="Annotation Process">
-                  <ul className="list-disc pl-5 space-y-1">
-                    <li>Follow project-specific labeling guidelines carefully</li>
-                    <li>Maintain consistency across all data points</li>
-                    <li>Document any ambiguous cases or questions</li>
-                    <li>Ensure all required fields are completed</li>
-                  </ul>
-                </StepItem>
-
-                <StepItem title="Upload Labeled Data">
-                  <ul className="list-disc pl-5 space-y-1">
-                    <li>Upload completed annotations through the platform</li>
-                    <li>Include any notes or questions for validators</li>
-                    <li>Submit within the specified timeframe</li>
-                  </ul>
+                <StepItem title="Submit Labeled Data">
+                  Upload your labeled files back to the project using the provided upload interface. Your work will be reviewed by validators before final approval.
                 </StepItem>
               </div>
-
               <div className="mt-4 p-4 bg-yellow-50 dark:bg-yellow-950/20 rounded-lg border border-yellow-200 dark:border-yellow-800">
                 <h5 className="font-medium mb-2 flex items-center">
                   <AlertTriangle className="h-4 w-4 mr-2 text-yellow-600" />
@@ -400,6 +376,7 @@ export default function Academy() {
                   <li>• Incomplete or improperly labeled submissions may be rejected</li>
                   <li>• Quality standards must be met to receive full payment</li>
                   <li>• Communication with validators is encouraged for clarification</li>
+                  <li>• Do not use or upload data from commercial platforms such as Labelbox, Scale AI, Kotwel, Codatta, or Kaggle.</li>
                 </ul>
               </div>
             </div>
