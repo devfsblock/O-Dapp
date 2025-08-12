@@ -187,7 +187,7 @@ export default function Dashboard() {
     <ProtectedLayout>
       <div className="space-y-8">
         <div>
-          <h1 className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-3xl font-bold text-transparent">
+          <h1 className="bg-gradient-to-r from-[#4F6BFE] to-purple-600 bg-clip-text text-3xl font-bold text-transparent">
             <TextGenerateEffect words="Welcome to OanicAI Dashboard" />
           </h1>
           <p className="mt-2 text-muted-foreground">
@@ -399,7 +399,7 @@ export default function Dashboard() {
                         {activity.type === "completion" ? (
                           <Award className="h-4 w-4 text-green-600 dark:text-green-400" />
                         ) : activity.type === "validation" ? (
-                          <CheckCircle className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+                          <CheckCircle className="h-4 w-4 text-[#4F6BFE] dark:text-[#4F6BFE]" />
                         ) : activity.type === "labeling" ? (
                           <FileText className="h-4 w-4 text-purple-600 dark:text-purple-400" />
                         ) : activity.type === "connect" ? (

@@ -284,7 +284,7 @@ export default function UploadProjectsPage() {
     <ProtectedLayout>
       <main className="flex-1 p-6 md:p-8 overflow-auto bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-[#4F6BFE] to-purple-600 dark:from-[#4F6BFE] dark:to-purple-400 bg-clip-text text-transparent">
             Upload Projects
           </h1>
         </div>
@@ -294,7 +294,7 @@ export default function UploadProjectsPage() {
           <div className="rounded-2xl bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-md dark:shadow-[0_0_15px_rgba(56,189,248,0.1)] overflow-hidden">
             <div className="p-6 border-b border-gray-200 dark:border-gray-800">
               <h2 className="text-xl font-bold flex items-center">
-                <Upload className="h-5 w-5 mr-2 text-blue-600 dark:text-blue-400" />
+                <Upload className="h-5 w-5 mr-2 text-[#4F6BFE] dark:text-[#4F6BFE]" />
                 Upload New Project
               </h2>
             </div>
@@ -320,7 +320,7 @@ export default function UploadProjectsPage() {
 
                 <div className="space-y-4">
                   <div className="mx-auto w-16 h-16 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
-                    <Upload className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+                    <Upload className="w-8 h-8 text-[#4F6BFE] dark:text-[#4F6BFE]" />
                   </div>
 
                   <div>
@@ -364,7 +364,7 @@ export default function UploadProjectsPage() {
                         {/* Project Name */}
                         <label className="flex flex-col text-gray-700 dark:text-gray-200">
                           Project Name
-                          <input name="name" value={projectForm.name} onChange={handleProjectFormChange} className="p-2 border rounded bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors" required />
+                          <input name="name" value={projectForm.name} onChange={handleProjectFormChange} className="p-2 border rounded bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-[#4F6BFE] focus:border-[#4F6BFE] transition-colors" required />
                         </label>
                         {/* Priority Dropdown */}
                         <label className="flex flex-col text-gray-700 dark:text-gray-200">

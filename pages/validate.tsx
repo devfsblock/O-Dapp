@@ -182,7 +182,7 @@ export default function ValidateNowPage() {
     <ProtectedLayout>
       <main className="flex-1 p-6 md:p-8 overflow-auto bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-[#4F6BFE] to-purple-600 dark:from-[#4F6BFE] dark:to-purple-400 bg-clip-text text-transparent">
             Validate Now
           </h1>
         </div>
@@ -269,7 +269,7 @@ export default function ValidateNowPage() {
                                     {/* Project Statistics */}
                                     <div className="space-y-4">
                                       <h4 className="font-semibold text-lg flex items-center">
-                                        <TrendingUp className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
+                                        <TrendingUp className="w-5 h-5 mr-2 text-[#4F6BFE] dark:text-[#4F6BFE]" />
                                         Statistics
                                       </h4>
                                       <div className="space-y-3">
@@ -294,7 +294,7 @@ export default function ValidateNowPage() {
                                     {/* Team Information */}
                                     <div className="space-y-4">
                                       <h4 className="font-semibold text-lg flex items-center">
-                                        <User className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
+                                        <User className="w-5 h-5 mr-2 text-[#4F6BFE] dark:text-[#4F6BFE]" />
                                         Team
                                       </h4>
                                       <div className="space-y-3">
@@ -323,7 +323,7 @@ export default function ValidateNowPage() {
                                     {/* Categories & Activity */}
                                     <div className="space-y-4">
                                       <h4 className="font-semibold text-lg flex items-center">
-                                        <FileCheck className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
+                                        <FileCheck className="w-5 h-5 mr-2 text-[#4F6BFE] dark:text-[#4F6BFE]" />
                                         Categories
                                       </h4>
                                       <div className="space-y-2">
@@ -349,7 +349,7 @@ export default function ValidateNowPage() {
                                   {/* Project Notes */}
                                   <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
                                     <h4 className="font-semibold text-lg flex items-center mb-3">
-                                      <AlertCircle className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
+                                      <AlertCircle className="w-5 h-5 mr-2 text-[#4F6BFE] dark:text-[#4F6BFE]" />
                                       Project Notes
                                     </h4>
                                     <div className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed whitespace-pre-line">
@@ -366,7 +366,7 @@ export default function ValidateNowPage() {
                                       <button
                                         onClick={() => handleDownloadFiles(project, 'fileIds')}
                                         disabled={downloadingFiles[`${project.id}-fileIds`]}
-                                        className="px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white rounded-lg font-medium transition-all flex items-center"
+                                        className="px-4 py-2 bg-gradient-to-r from-[#4F6BFE] to-cyan-500 hover:from-[#4F6BFE] hover:to-cyan-600 text-white rounded-lg font-medium transition-all flex items-center"
                                       >
                                         {downloadingFiles[`${project.id}-fileIds`] ? <Loader2 className="w-4 h-4 mr-2 animate-spin" /> : <Download className="w-4 h-4 mr-2" />}
                                         Download Submitter Files
