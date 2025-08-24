@@ -1,6 +1,7 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
+import InvitationCodeScreen from "../components/invitation-code-screen"
 import { useRouter } from "next/router"
 import { motion } from "framer-motion"
 import { useAuth } from "../lib/auth-context"
@@ -10,25 +11,30 @@ import { useUserProfile } from '@/hooks/useUserProfile'
 import { useAccount } from 'wagmi'
 
 
-export default function Login() {
-  const router = useRouter()
-  const { isAuthenticated, connectWallet, isConnecting, walletAddress } = useAuth()
-  const { address } = useAccount()
-  const { user, isLoading } = useUserProfile()
 
+export default function Login() {
+  const router = useRouter();
+  const { isAuthenticated, connectWallet, isConnecting, walletAddress } = useAuth();
+  const { address } = useAccount();
+  const { user, isLoading } = useUserProfile();
   useEffect(() => {
     // If already authenticated, check user profile
     if (isAuthenticated && address) {
       if (!isLoading && (!user || !user.username || !user.email || !user.userType)) {
-        router.push('/signup')
+        router.push('/signup');
       } else if (!isLoading && user) {
-        router.push('/dashboard')
+        router.push('/dashboard');
       }
     }
-  }, [isAuthenticated, address, user, isLoading, router])
+  }, [isAuthenticated, address, user, isLoading, router]);
+
+  // Only show login if invitationVerified is set
+  if (typeof window !== "undefined" && localStorage.getItem("invitationVerified") !== "true") {
+    router.replace("/invitationCode");
+    return null;
+  }
 
   return (
-   
     <div className="relative h-screen w-full overflow-hidden bg-black">
       {/* <GlowingStarsBackground /> */}
       <div className="flex h-full w-full items-center justify-center">
@@ -77,5 +83,5 @@ export default function Login() {
         </motion.div>
       </div>
     </div>
-  )
+  );
 }

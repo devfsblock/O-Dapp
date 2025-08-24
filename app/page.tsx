@@ -9,11 +9,16 @@ export default function Page() {
   const { isAuthenticated } = useAuth()
 
   useEffect(() => {
+    // Initial onboarding: show invitationCode unless verified
+    if (typeof window !== "undefined" && localStorage.getItem("invitationVerified") !== "true") {
+      router.replace("/invitationCode")
+      return
+    }
     // Redirect based on authentication status
     if (isAuthenticated) {
       router.push("/dashboard")
     } else {
-      router.push("/login")
+      router.push("/invitationCode")
     }
   }, [isAuthenticated, router])
 
