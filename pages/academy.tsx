@@ -327,9 +327,7 @@ export default function Academy() {
                       <li>
                         <strong>Image Data:</strong> JPG, PNG, TIFF, BMP files
                       </li>
-                      <li>
-                        <strong>Mixed Projects:</strong> ZIP archives containing multiple file types
-                      </li>
+                    
                     </ul>
                   </div>
                 </StepItem>
@@ -1219,7 +1217,12 @@ export default function Academy() {
                     </p>
                   </CardContent>
                   <CardFooter className="pt-0">
-                    <Button variant="outline" size="sm" className="w-full">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="w-full"
+                      onClick={() => window.open("https://discord.com/invite/Wn3xcgrcX5", "_blank")}
+                    >
                       Join Discord
                     </Button>
                   </CardFooter>
@@ -1233,7 +1236,12 @@ export default function Academy() {
                     <p className="text-xs text-muted-foreground">Get platform updates and announcements</p>
                   </CardContent>
                   <CardFooter className="pt-0">
-                    <Button variant="outline" size="sm" className="w-full">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="w-full"
+                      onClick={() => window.open("https://t.me/oanicai", "_blank")}
+                    >
                       Join Telegram
                     </Button>
                   </CardFooter>
@@ -1249,7 +1257,7 @@ export default function Academy() {
             </div>
           </InfoCard>
 
-          <InfoCard icon={<FileText className="h-4 w-4 text-primary" />} title="Quick Reference Guides">
+          {/* <InfoCard icon={<FileText className="h-4 w-4 text-primary" />} title="Quick Reference Guides">
             <div className="space-y-4">
               <div className="grid gap-3 md:grid-cols-3">
                 <Button variant="outline" className="h-auto p-4 flex flex-col items-center">
@@ -1269,7 +1277,7 @@ export default function Academy() {
                 Download printable PDF guides for offline reference
               </p>
             </div>
-          </InfoCard>
+          </InfoCard> */}
         </div>
       ),
     },
