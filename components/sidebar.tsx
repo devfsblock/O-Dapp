@@ -38,6 +38,12 @@ const sidebarItems: SidebarItem[] = [
     icon: LayoutDashboard,
     href: "/dashboard",
   },
+   {
+  
+    title: "Emerging Horizons",
+    icon: Award,
+    href: "/emerging-horizons",
+  },
   {
     // title: "Upload Projects",
     title: "Data Ingestion",
