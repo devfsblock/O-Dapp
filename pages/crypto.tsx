@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { ArrowLeft, Star, Clock, CheckCircle, X, Award, Coins } from "lucide-react"
 import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card"
-import ProtectedLayout from "@/components/protected-layout"
+import ProtectedLayout from "../components/protected-layout"
 
 const cryptoTasks = [
   {
@@ -77,6 +77,7 @@ export default function CryptoPage() {
   }
 
   return (
+    <ProtectedLayout>
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-[#4F6BFE]/5 dark:from-gray-950 dark:via-gray-900 dark:to-[#4F6BFE]/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         {/* Header */}
@@ -101,7 +102,7 @@ export default function CryptoPage() {
         </motion.div>
 
         {/* How to Earn Rewards Section */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
@@ -146,15 +147,9 @@ export default function CryptoPage() {
               </div>
             </CardContent>
           </Card>
-        </motion.div>
+        </motion.div> */}
 
-        {/* Available Tasks Section */}
-        <div className="mb-4 sm:mb-6">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Available Tasks</h2>
-          <p className="text-gray-600 dark:text-gray-400 mt-1 sm:mt-2 text-sm sm:text-base">
-            Click on any task card to get started
-          </p>
-        </div>
+      
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
@@ -507,5 +502,6 @@ export default function CryptoPage() {
         )}
       </AnimatePresence>
     </div>
+    </ProtectedLayout>
   )
 }
