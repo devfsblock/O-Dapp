@@ -93,7 +93,7 @@ export default function CryptoPage() {
 
           <div className="mb-6 sm:mb-8">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#4F6BFE] to-cyan-400 bg-clip-text text-transparent mb-3 sm:mb-4">
-              Crypto Tasks
+              Crypto & DeFi
             </h1>
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300">
               Contribute to the future of cryptocurrency and blockchain technology
